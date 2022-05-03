@@ -5,9 +5,10 @@
   "license": "MIT",
   "scripts": {
     "start": "node bot.js",
-    "dev": "nodemon bot.j"
+    "dev": "nodemon bot.js"
   },
   "dependencies": {
+    "discord.js": "^13.6.0",
     "dotenv": "^16.0.0"
   },
   "devDependencies": {
