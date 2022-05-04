@@ -1,4 +1,4 @@
-const { responseMessageType } = require('../constants/constants')
+const { responseMessageType } = require('../constants/constants');
 
 const processSendMessage = (originalPayload, responseBehavior) => {
     switch(responseBehavior.responseMessageType) {
