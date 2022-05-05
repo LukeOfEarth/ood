@@ -25,12 +25,14 @@ const processCommandBehavior = (command, message, payload) => {
     let behavior = commandList.find(c => c.command === command);
     if(!behavior) behavior = defaultResponse;
 
+    const args = message.split(' ').slice(1);
+
     switch(behavior.responseActionType) {
         case responseActionType.message:
             processSendMessage(payload, behavior);
             return;
         case responseActionType.action:
-            processAction(payload, behavior);
+            processAction(payload, behavior, args);
             return;
     }
 }
