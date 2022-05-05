@@ -6,6 +6,7 @@ const responseMessageType = {
 
 const responseActionType = {
     message: 'message',
+    action: 'action'
 }
 
 module.exports = {

@@ -1,6 +1,7 @@
 const { commandList, defaultResponse } = require('../constants/commandList');
 const { responseActionType } = require('../constants/constants');
 const { processSendMessage } = require('../messages/send');
+const { processAction } = require('../actions');
 
 const handleCommand = (payload = undefined) => {
     if(!payload) return;
@@ -27,6 +28,9 @@ const processCommandBehavior = (command, message, payload) => {
     switch(behavior.responseActionType) {
         case responseActionType.message:
             processSendMessage(payload, behavior);
+            return;
+        case responseActionType.action:
+            processAction(payload, behavior);
             return;
     }
 }
