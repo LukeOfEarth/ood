@@ -1,0 +1,13 @@
+{
+    "id": "0",
+    "name": "Test Shop",
+    "items": [
+        {
+            "name": "Sword",
+            "cost": "10",
+            "coinType": "Gold",
+            "coinAbbr": "GP"
+        }
+    ],
+    "type": "Weapons"
+}

@@ -1,7 +1,9 @@
 const { helpAction } = require('./help');
+const { listAction } = require('./list');
 
 const actions = {
-    help: helpAction
+    help: helpAction,
+    list: listAction
 };
 
 const processAction = (payload, behavior, args = undefined) => {

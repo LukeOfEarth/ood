@@ -29,6 +29,14 @@ const commandList = [
         responseMessageType: responseMessageType.direct,
         responseActionName: 'help',
         description: 'Get some help with using the bot'
+    },
+    {
+        command: 'list',
+        responseMessageText: '',
+        responseActionType: responseActionType.action,
+        responseMessageType: responseMessageType.direct,
+        responseActionName: 'list',
+        description: 'Lists something based on keyword supplied (e.g. !list shops)'
     }
 ]
 
